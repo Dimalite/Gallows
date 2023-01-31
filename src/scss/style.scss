@@ -1,0 +1,262 @@
+:root {
+  --main-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  
+  --main-shadow: rgba(250, 249, 249, 0.17) 0px -23px 25px 0px inset,
+    rgba(241, 239, 239, 0.15) 0px -36px 30px 0px inset,
+    rgba(236, 234, 234, 0.1) 0px -79px 40px 0px inset,
+    rgba(167, 161, 161, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.486) 0px 4px 2px,
+    rgba(0, 0, 0, 0.507) 0px 8px 4px,
+    rgba(0, 0, 0, 0.404) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+body * {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+}
+button {
+  margin-top: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.btn-pause {
+  cursor: pointer;
+}
+
+.btnReset {
+  margin-left: 40px;
+}
+
+
+.keyboard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}
+
+.keyboard-base {
+  padding: 20px;
+  background: rgba(197, 207, 207, 0.616);
+  border-radius: 5px;
+  border: 1px solid rgb(58, 52, 52);
+  box-shadow: var(--main-box-shadow);
+
+  display: grid;
+  grid-template-columns: repeat(24, auto);
+  grid-template-rows: repeat(3, 60px);
+  grid-gap: 5px;
+}
+
+
+/* .placebo, */
+.key {
+  background-color: rgb(243, 243, 243);
+  border: 2px solid black;
+  border-radius: 10px;
+  grid-column: span 2;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  margin: 2px;
+  box-shadow: var(--main-shadow);
+}
+
+
+.key:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  box-shadow: var(--main-box-shadow);
+}
+
+.hint:hover {
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+.space:hover {
+  box-shadow: var(--main-box-shadow);
+}
+
+.delete {
+  grid-column: span 4;
+}
+
+.tab,
+.leftctrl {
+  grid-column: span 3;
+}
+
+.space {
+  grid-column: span 16;
+}
+
+.game {
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("../img/tetradnii-list.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px;
+  background: rgba(69, 71, 71, 0.37);
+  box-shadow: var(--main-shadow);
+  display: flex;
+  justify-content: space-around;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  height: 220px;
+}
+
+.cartoon {
+  text-align: center;
+  position: relative;
+  margin-right: 8em;
+}
+
+.cartoonImg {
+  width: 165px;
+}
+
+.assumption {
+  background: transparent;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+}
+
+.sign {
+  margin: 20px;
+  margin-top: 0;
+  font-size: 70px;
+  color: #000;
+}
+.hidden {
+  margin: 20px;
+  font-size: 50px;
+  color: transparent;
+}
+
+.hi {
+  padding-top: 20px;
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+.right {
+  background-color: #0cf588;
+  border: 1px solid #188318;
+  box-shadow: var(--main-box-shadow);
+  pointer-events: none;
+}
+
+.wrong {
+  background-color: #fa0021e1;
+  border: 1px solid #ec0000;
+  box-shadow: var(--main-box-shadow);
+  pointer-events: none;
+}
+
+.not_display {
+  display: none !important;
+}
+
+.bxs-star {
+  color: gold;
+  font-size: 36px;
+}
+
+span {
+  font-family: "Lobster", cursive;
+  font-size: 32px;
+  text-align: center;
+  color: blue;
+}
+.level {
+  font-size: 22px;
+  text-align: center;
+}
+
+.title {
+  font-size: 23px;
+  font-family: "Lobster", cursive;
+}
+
+.gameStop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 15px;
+  background: rgba(165, 212, 212, 0.404);
+
+  border: 2px solid black;
+}
+
+.over {
+  margin: 0 20px;
+}
+
+.pause {
+  margin-top: 70px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  background: rgba(165, 212, 212, 0.404);
+  padding-bottom: 65px;
+  z-index: 2000;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.nextLevel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(165, 212, 212, 0.404);
+}
+
+#nextLevel {
+  display: none;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

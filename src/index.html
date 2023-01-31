@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+	"title": "Gallows"
+})
+<body>
+	
+	@@include('html/header.html', {})
+	<div class="game">
+   
+     
+      <div class="screen">
+        <div class="cartoon">
+          <img class="cartoonImg" src="../img/hangman/img_08.png" alt="hangman"/>
+        </div>
+        <div class="assumption" id="guess"></div>
+      </div>
+
+      <div id="gameStop" class="gameStop not_display">
+        <button><img src="./img/img/arrow-home.png" alt=""></button>
+        <img class="over" src="./img/img/over.png" alt="game over" >
+        <button><img class="repeat" src="../img/img/arrow-circle.png" alt=""></button>
+      </div>
+      <div id="nextLevel" class="nextLevel">
+        <img class="" src="../img/next-level-progress.jpg" width="400px" alt="next level load" >
+      </div>
+
+      <div class="pause not_display">
+        <button><img src="../img/img/arrow-home.png" alt=""></button>
+           <button class="btnReset"><img src="./img/img/arrow-circle.png" alt=""></button>
+        <img class="pauseImage" src="../img/img/pause.png" alt="pause">
+      </div>
+      <div class="keyboard">   
+        <div id="bord_ru" class="keyboard-base base">
+          <div class="key">Й</div>
+          <div class="key">Ц</div>
+          <div class="key">У</div>
+          <div class="key">К</div>
+          <div class="key">Е</div>
+          <div class="key">Н</div>
+          <div class="key">Г</div>
+          <div class="key">Ш</div>
+          <div class="key">Щ</div>
+          <div class="key">З</div>
+          <div class="key">Х</div>
+          <div class="key">Ъ</div>
+          <div class="fi"></div>
+          <div class="key">Ф</div>
+          <div class="key">Ы</div>
+          <div class="key">В</div>
+          <div class="key">А</div>
+          <div class="key">П</div>
+          <div class="key">Р</div>
+          <div class="key">О</div>
+          <div class="key">Л</div>
+          <div class="key">Д</div>
+          <div class="key">Ж</div>
+          <div class="key">Э</div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="key">Я</div>
+          <div class="key">Ч</div>
+          <div class="key">С</div>
+          <div class="key">М</div>
+          <div class="key">И</div>
+          <div class="key">Т</div>
+          <div class="key">Ь</div>
+          <div class="key">Б</div>
+          <div class="key">Ю</div>
+          <div class="key hint">?</div>
+          <div class="leftctrl"></div>
+          <div></div>
+          <div class="key space">Спейс</div>
+          <div></div>
+        </div> 
+      </div>
+    </div>
+	@@include('html/footer.html', {})
+	<script src="js/app.min.js"></script>
+</body>
+</html>

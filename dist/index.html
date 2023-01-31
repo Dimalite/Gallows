@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230131190435">
+	 <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css?_v=20230131190435"
+    />
+	<title>Gallows</title>
+</head>
+<body>
+	
+	  <header class="header">
+        <div><i class="bx bxs-star"></i><span class="stars"></span></div>
+        <p class="out"></p>
+        <div class="top">
+          <div class="level">Level: <span id="numLevel">1</span></div>
+          <div class="title"></div>
+        </div>
+      
+        <img class="btn-pause" 
+        src="./img/cartoon/pause-button.png" 
+        alt="pause" />
+     
+      </header>
+	<div class="game">
+   
+     
+      <div class="screen">
+        <div class="cartoon">
+          <picture><source srcset="../img/hangman/img_08.webp" type="image/webp"><img class="cartoonImg" src="../img/hangman/img_08.png" alt="hangman"/></picture>
+        </div>
+        <div class="assumption" id="guess"></div>
+      </div>
+
+      <div id="gameStop" class="gameStop not_display">
+        <button><picture><source srcset="./img/img/arrow-home.webp" type="image/webp"><img src="./img/img/arrow-home.png" alt=""></picture></button>
+        <picture><source srcset="./img/img/over.webp" type="image/webp"><img class="over" src="./img/img/over.png" alt="game over" ></picture>
+        <button><picture><source srcset="../img/img/arrow-circle.webp" type="image/webp"><img class="repeat" src="../img/img/arrow-circle.png" alt=""></picture></button>
+      </div>
+      <div id="nextLevel" class="nextLevel">
+        <picture><source srcset="../img/next-level-progress.webp" type="image/webp"><img class="" src="../img/next-level-progress.jpg" width="400px" alt="next level load" ></picture>
+      </div>
+
+      <div class="pause not_display">
+        <button><picture><source srcset="../img/img/arrow-home.webp" type="image/webp"><img src="../img/img/arrow-home.png" alt=""></picture></button>
+           <button class="btnReset"><picture><source srcset="./img/img/arrow-circle.webp" type="image/webp"><img src="./img/img/arrow-circle.png" alt=""></picture></button>
+        <picture><source srcset="../img/img/pause.webp" type="image/webp"><img class="pauseImage" src="../img/img/pause.png" alt="pause"></picture>
+      </div>
+      <div class="keyboard">   
+        <div id="bord_ru" class="keyboard-base base">
+          <div class="key">Й</div>
+          <div class="key">Ц</div>
+          <div class="key">У</div>
+          <div class="key">К</div>
+          <div class="key">Е</div>
+          <div class="key">Н</div>
+          <div class="key">Г</div>
+          <div class="key">Ш</div>
+          <div class="key">Щ</div>
+          <div class="key">З</div>
+          <div class="key">Х</div>
+          <div class="key">Ъ</div>
+          <div class="fi"></div>
+          <div class="key">Ф</div>
+          <div class="key">Ы</div>
+          <div class="key">В</div>
+          <div class="key">А</div>
+          <div class="key">П</div>
+          <div class="key">Р</div>
+          <div class="key">О</div>
+          <div class="key">Л</div>
+          <div class="key">Д</div>
+          <div class="key">Ж</div>
+          <div class="key">Э</div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="key">Я</div>
+          <div class="key">Ч</div>
+          <div class="key">С</div>
+          <div class="key">М</div>
+          <div class="key">И</div>
+          <div class="key">Т</div>
+          <div class="key">Ь</div>
+          <div class="key">Б</div>
+          <div class="key">Ю</div>
+          <div class="key hint">?</div>
+          <div class="leftctrl"></div>
+          <div></div>
+          <div class="key space">Спейс</div>
+          <div></div>
+        </div> 
+      </div>
+    </div>
+	<footer>dsfdsf</footer>
+	<script src="js/app.min.js?_v=20230131190435"></script>
+</body>
+</html>
